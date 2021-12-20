@@ -1,0 +1,209 @@
+//svg icon
+@function icon($iconName, $color:ff0077){
+    $iconList: (
+        arrow__top-fill: " %3Csvg xmlns='http://www.w3.org/2000/svg' width='9' height='6'%3E%3Cpath fill-rule='evenodd' fill='%23#{$color}' d='m4.5-.001 4.5 6H0l4.5-6Z'/%3E%3C/svg%3E",
+    );
+    $icon: map-get($iconList, $iconName );
+    @return url("data:image/svg+xml;charset=utf8, #{$icon}");
+}
+
+
+.icon {
+    display: block;
+    width:1.5rem; 
+    height:1.3rem;
+    background-repeat: no-repeat;
+    &.arrow{
+        &-fill{background-image: icon(arrow__top-fill);  
+            &__white{
+                width:2.1rem;
+                width:1.5rem;
+                background: {
+                    image: icon(arrow__bottom-fill, 'ffffff');
+                    size: 100%;
+                    repeat: no-repeat;
+                    position:center;
+                } ;
+                
+            }
+            &__gray{
+                width:2.1rem;
+                width:1.5rem;
+                background: {
+                    image: icon(arrow__bottom-fill, 'cccccc');
+                    size: 100%;
+                    repeat: no-repeat;
+                    position:center;
+                } ;
+            }
+            &__dgray{
+                width:1.5rem;
+                width:1.3rem;
+                background: {
+                    image: icon(arrow__bottom-fill, '78838c');
+                    size: 100%;
+                    repeat: no-repeat;
+                    position:center;
+                } ;
+            }
+        }
+        &-round{background-image: icon(arrow-round);}
+        &-back{background-image: icon(arrow-back); }
+        &-top{background-image: icon(arrow-top);}
+        &-left{background-image: icon(arrow-left);}
+        &-first{background-image: icon(arrow-first, '747478');}
+        &-last{background-image: icon(arrow-first, '747478'); transform: rotate(180deg);}
+        &-prev{background-image: icon(arrow-prev, '747478');background-size: cover;}
+        &-next{background-image: icon(arrow-prev, '747478');background-size: cover; transform: rotate(180deg);}
+        &-right{background-image: icon(arrow-right);}
+        &-more{background-image: icon(arrow-more);}
+    }
+    &.stop {
+        background-image: icon(stop);
+      }
+    &.more{
+        background-image: icon(more);
+        &-info{
+            background-image: icon(more-info);
+        }
+    }
+    
+    &.calendar{
+        background-image: icon(calendar);
+    }
+    &.date{
+        background-image: icon(date);
+        background: url(../image/icon-date.png);
+    }
+    &.chevron{
+        &-down{background-image: icon(chevron-down); background-repeat: no-repeat; background-position:center right;}
+    }
+    &.star{
+        width: 1.8rem;
+        height: 1.8rem;
+        background-image: icon(star);
+        background-size: contain;
+        &-pink{
+            background-image: icon(star-pink);
+            background: url(../image/icon-star-pink.png)no-repeat center;
+            background-size: cover;
+        }
+    }
+    &.heart{
+        background-image: icon(heart);
+    }
+    
+    &.rate-more{
+        background-image: icon(rate-more);
+        background-size: contain;
+    }
+    &.modify{
+        background-image: icon(modify);
+        background: url(../image/icon-modify.png)no-repeat center; 
+        background-size: contain;
+    }
+    &.close{
+        background-image: icon(close, '000');
+        background-size: contain;
+        &-white{
+            background-image: icon(close-white, 'fff');    
+        }
+    }
+    &.refresh{
+        background-image: icon(refresh);
+        background-size: contain;
+    }
+    &.check{
+        background-image: icon(check);
+        background-size: contain;
+    }
+    &.airplane{
+        background-image: icon(airplane);
+        background: url(../image/icon-airline-gray.png)no-repeat;
+        background-size: contain;
+    }
+    &.search{
+        background-image: icon(search);
+    }
+    &.search-close{
+        background-image: icon(search-close);
+    }
+    &.file{
+        width:1.6rem;
+        height:1.6rem;
+        background-image: icon(file);
+        background: url(../image/icon-file.png);
+        background-size:contain;
+    }
+    &.minus{
+        background-image: icon(minus);
+        background: url(../image/icon-minus.png);
+        background-size: cover;
+        &.disabled{
+            opacity: 0.28;
+        }
+    }
+    &.plus{
+        background-image: icon(plus);
+        background: url(../image/icon-plus.png);
+        background-size: cover;
+    }
+    &.plus-thin{
+        background-image: icon(plus-thin, '000');
+        background-size: cover
+    }
+    &.paper{
+        background-image: icon(paper);
+    }
+    &.people{
+        
+        background-image: icon(people);
+        background: url(../image/icon-people.png);
+    }
+    &.logout{
+        background-image: icon(logout);
+        background: url(../image/icon-logout.png)no-repeat;
+        background-size: contain;
+    }
+    &.trip-item{
+        background-image: icon(trip-item);
+    }
+    &.tour-item{
+        background-image: icon(tour-item);
+    }
+    &.airline{
+        width:3.3rem;
+        height: 3.3rem;
+        background-image: icon(airline);
+    }
+    &.myplan{
+        background-image: icon(myplan);
+        background-image: url(../image/icon/icon-mytrip.png);
+    }
+    &.big-star{
+        background-image: icon(big-star);
+    }
+    &.fold{
+        width:2rem;
+        height:1.5rem;
+        background-image: icon(fold, '000');
+        background-size: cover;
+    }
+    &.shortcut{
+        width: 4.1rem;
+        height: 1.1rem;
+        background-image: icon(shortcut, '78838c');
+        &--white{
+            background-image: icon(shortcut, 'fff');    
+        }  
+    }
+    
+    // &.hide{
+    //     display: block;
+    //     background-image: icon(hide);
+    // }
+    
+}
+.sitemap-close{
+    background-image: icon(sitemap-close, 'fff');
+}

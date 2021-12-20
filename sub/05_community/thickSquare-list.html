@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>씽굿</title>
+
+    <link rel="stylesheet" href="../../resource/css/reset.css">
+    <link rel="stylesheet" href="../../resource/css/font.css">
+    <link rel="stylesheet" href="../../resource/css/animate.css">
+    <link rel="stylesheet" href="../../resource/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../resource/css/swiper.min.css">
+
+    <link rel="stylesheet" href="../../resource/css/sub.css">
+    <link rel="stylesheet" href="../../resource/css/main.css">
+
+    <script src="../../resource/js/jquery-1.12.4.min.js"></script>
+    <script src="../../resource/js/bootstrap.min.js"></script>
+    <script src="../../resource/js/swiper.min.js"></script>
+
+    <script src="../../resource/js/common.js"></script>
+    <script src="../../resource/js/main.js"></script>
+    <script src="../../resource/js/sub.js"></script>
+
+</head>
+
+<body>
+    <div class="wrap">
+        <header>
+            <div class="header__inner">
+                <div class="rooftop ">
+                    <div class="rooftop__inner d-flex align-items-center">
+                        <div class="user-join ml-auto">
+                            <ul class="d-flex align-items-center">
+                                <li><a href="javascript:void(0)">HOME</a></li>
+                                <li><a href="javascript:void(0)">LOGIN</a></li>
+                                <li><a href="javascript:void(0)">JOIN</a></li>
+                            </ul>
+                        </div>
+                        <div class="sns">
+                            <ul class="d-flex">
+                                <li><a href="javascript:void(0)"><img
+                                            src="../../resource/image/common/icon/sns-facebook.png" alt=""></a></li>
+                                <li><a href="javascript:void(0)"><img
+                                            src="../../resource/image/common/icon/sns-insta.png" alt=""></a></li>
+                                <li><a href="javascript:void(0)"><img
+                                            src="../../resource/image/common/icon/sns-blog.png" alt=""></a></li>
+                                <li><a href="javascript:void(0)"><img
+                                            src="../../resource/image/common/icon/sns-youtube.png" alt=""></a></li>
+                            </ul>
+                        </div>
+                        <div class="user-area d-flex align-items-center">
+                            <div class="mailing">
+                                <button type="button" class="btn-mailing">
+                                    <img src="../../resource/image/common/icon/icon-mailing.png" alt="">
+                                </button>
+                            </div>
+                            <div class="search">
+                                <button type="button" class="btn-search">
+                                    <img src="../../resource/image/common/icon/icon-search.png" alt="">
+                                </button>
+                            </div>
+                            <div class="hammenu">
+                                <button type="button" class="btn-hammenu">
+                                    <img src="../../resource/image/common/icon/icon-hammenu.png" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gnb">
+                    <div class="gnb__inner d-flex align-items-center">
+                        <div class="logo">
+                            <a href="javascript:void(0)">
+                                <img src="../../resource/image/common/logo.png" alt="">
+                            </a>
+                        </div>
+                        <div class="gnb-menu">
+                            <div class="depth1">
+                                <ul class="d-flex ">
+                                    <li><a href="javascript:void(0)">공모전</a></li>
+                                    <li><a href="javascript:void(0)">대외활동</a></li>
+                                    <li><a href="javascript:void(0)">교육/행사</a></li>
+                                    <li><a href="javascript:void(0)">씽굿 lab</a></li>
+                                    <li><a href="javascript:void(0)">커뮤니티</a></li>
+                                    <li><a href="javascript:void(0)">광고안내</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="notice"></div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="content">
+            <div class="content__inner sub">
+                <div class="banner-wrap__sub">
+
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="javascript:void(0)">
+                                    <div class="img-wrap">
+                                        <img src="../../resource/image/sub/img__sub-banner01.png" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="content__core d-flex">
+                    <div class="lnb">
+                        <div class="lnb__inner">
+                            <p class="tit">커뮤니티</p>
+                            <div class="lnb-list">
+                                <div class="lnb-list__inner">
+                                    <ul class="lnb-list__dep2">
+                                        <li class="active"><a href="javascript:void(0)">씽굿광장</a></li>
+                                        <li><a href="javascript:void(0)">자유게시판</a></li>
+                                        <li><a href="javascript:void(0)">지식 Q&A</a></li>
+                                        <li><a href="javascript:void(0)">씽굿 TALK</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content__core-right">
+                        <div class="d-flex search-box">
+                            <div class="d-flex">
+                                <select class="select">
+                                    <option value="0">분류</option>
+                                </select>
+                            </div>
+                            <div class="d-flex align-items-center ml-auto search-right">
+                                <div>
+                                    <select class="select">
+                                        <option value="0" selected="selected">전체</option>
+                                        <option value="1">제목</option>
+                                        <option value="2">내용</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <div class="form-search">
+                                        <input type="text" name="searchKeyword" value="" id="" class="form-input"
+                                            placeholder="" />
+                                        <button type="submit" class="form-search__click"><i></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="table-wrap hor">
+                            <div class="table">
+                                <table class="text-center">
+                                    <colgroup>
+                                        <col style="width:110px;">
+                                        <col style="width:120px;">
+                                        <col style="width: auto;">
+                                        <col style="width:145px;">
+                                        <col style="width:123px;">
+                                        <col style="width:130px;">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">번호</th>
+                                            <th scope="col">분류</th>
+                                            <th scope="col">제목</th>
+                                            <th scope="col">글쓴이</th>
+                                            <th scope="col">날짜</th>
+                                            <th scope="col">조회</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <!-- 전달사항 :: list 10개 표출됩니다. -->
+                                        <tr>
+                                            <td>3</td>
+                                            <td class="font-weight__m">광고</td>
+                                            <td class="text-left">
+                                                <div class="tit">
+                                                    <a href="/Community/InfoDetail.html?id=34144">[5년인증 최우수기관]
+                                                        IT국비과정(국가기간전략산업)
+                                                        - 전액100%무료[5년인증 최우수기관] IT국비과정(국가기간전략산업)
+                                                        - 전액100%무료[5년인증 최우수기관] IT국비과정(국가기간전략산업)
+                                                        - 전액100%무료</a>
+                                                    <span class="badge new"></span>
+                                                </div>
+                                            </td>
+                                            <td>문종민</td>
+                                            <td>2021.12.16</td>
+                                            <td>4</td>
+                                        </tr>
+                                        <!-- 답변 있는경우 -->
+                                        <tr>
+                                            <td>3</td>
+                                            <td class="font-weight__m">광고</td>
+                                            <td class="text-left">
+                                                <div class="tit">
+                                                    <a href="/Community/InfoDetail.html?id=34144">
+                                                        <span class="badge answer">답변</span>[5년인증 최우수기관]
+                                                        IT국비과정(국가기간전략산업)
+                                                        - 전액100%무료[5년인증 최우수기관] IT국비과정(국가기간전략산업)
+                                                        - 전액100%무료[5년인증 최우수기관] IT국비과정(국가기간전략산업)
+                                                        - 전액100%무료</a>
+                                                    <span class="badge new"></span>
+                                                </div>
+                                            </td>
+                                            <td>문종민</td>
+                                            <td>2021.12.16</td>
+                                            <td>4</td>
+                                        </tr>
+                                        <!-- 답변 있는경우 -->
+                                        <tr>
+                                            <td>2</td>
+                                            <td class="font-weight__m">광고</td>
+                                            <td class="text-left">
+                                                <div class="tit">
+                                                    <a href="/Community/InfoDetail.html?id=34090">[5년인증 최우수기관]
+                                                        IT국비과정(국가기간전략산업)
+                                                        - 전액100%무료</a>
+                                                    <span class="badge new"></span>
+                                                </div>
+                                            </td>
+                                            <td>문종민</td>
+                                            <td>2021.12.14</td>
+                                            <td>10</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td class="font-weight__m">광고</td>
+                                            <td class="text-left">
+                                                <div class="tit">
+                                                    <a href="/Community/InfoDetail.html?id=34089">[5년인증 최우수기관]
+                                                        IT국비과정(국가기간전략산업)
+                                                        - 전액100%무료</a>
+                                                    <span class="badge new"></span>
+                                                </div>
+                                            </td>
+                                            <td>문종민</td>
+                                            <td>2021.12.14</td>
+                                            <td>11</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="board-bottom">
+                            <div class="paging d-flex justify-content-center">
+                                <div class="paging__inner d-flex">
+                                    <a href="javascript:void(0)" class="first"><i class="icon arrow-first"></i></a>
+                                    <a href="javascript:void(0)" class="prev"><i class="icon arrow-prev"></i></a>
+                                    <a href="javascript:void(0)" class="on">1</a>
+                                    <a href="javascript:void(0)">2</a>
+                                    <a href="javascript:void(0)">3</a>
+                                    <a href="javascript:void(0)">4</a>
+                                    <a href="javascript:void(0)">5</a>
+                                    <a href="javascript:void(0)">6</a>
+                                    <a href="javascript:void(0)">7</a>
+                                    <a href="javascript:void(0)">8</a>
+                                    <a href="javascript:void(0)">9</a>
+                                    <a href="javascript:void(0)">10</a>
+                                    <a href="javascript:void(0)" class="next"><i class="icon arrow-next"></i></a>
+                                    <a href="javascript:void(0)" class="last"><i class="icon arrow-last"></i></a>
+                                </div>
+                            </div>
+                            <div class="button-wrap position-absolute">
+                                <button class="btn-red" type="button">스크랩</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <footer>
+                <div class="footer__inner">
+                    <div class="banner">
+                        <div class="banner__inner d-flex align-items-center">
+                            <p>씽굿공모전 <br>
+                                관련사이트 </p>
+                            <div class="slide-banner">
+                                <div class="slide-banner__inner">
+                                    <div class="swiper-container">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <a href="javascript:void(0)">
+                                                    <div class="img-wrap">
+                                                        <img src="../../resource/image/common/img-footer__banner01.png"
+                                                            alt="">
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="javascript:void(0)">
+                                                    <div class="img-wrap">
+                                                        <img src="../../resource/image/common/img-footer__banner02.png"
+                                                            alt="">
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="javascript:void(0)">
+                                                    <div class="img-wrap">
+                                                        <img src="../../resource/image/common/img-footer__banner03.png"
+                                                            alt="">
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="javascript:void(0)">
+                                                    <div class="img-wrap">
+                                                        <img src="../../resource/image/common/img-footer__banner04.png"
+                                                            alt="">
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="javascript:void(0)">
+                                                    <div class="img-wrap">
+                                                        <img src="../../resource/image/common/img-footer__banner05.png"
+                                                            alt="">
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="javascript:void(0)">
+                                                    <div class="img-wrap">
+                                                        <img src="../../resource/image/common/img-footer__banner06.png"
+                                                            alt="">
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="javascript:void(0)">
+                                                    <div class="img-wrap">
+                                                        <img src="../../resource/image/common/img-footer__banner07.png"
+                                                            alt="">
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="site-menu">
+                        <div class="site-menu__inner">
+                            <ul class="d-flex align-items-center">
+                                <li><a href="javascript:void(0)">회사소개</a></li>
+                                <li><a href="javascript:void(0)">이용약관</a></li>
+                                <li><a href="javascript:void(0)" class="color-red font-weight__m">개인정보처리방침</a></li>
+                                <li><a href="javascript:void(0)">책임한계와
+                                <li><a href="javascript:void(0)">법적고지</a></li>
+                                <li><a href="javascript:void(0)">제휴/제안안내</a></li>
+                                <li><a href="javascript:void(0)">사이트맵</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="thinkgood-info">
+                        <div class="thinkgood-info__inner d-flex align-items-center justify-content-between">
+                            <div class="footer-logo">
+                                <a href="javascript:void(0)"><img src="../../resource/image/common/logo.png" alt=""></a>
+                            </div>
+                            <div class="thinkgood-info-txt d-flex flex-wrap">
+                                <p>법인명(상호) : 주식회사 씽굿</p>
+                                <p>사업자등록번호 : 214-86-44014</p>
+                                <p>대표전화 : <span class="color-red">02-334-7540</span></p>
+                                <p>팩스 : 02-334-7392</p>
+                                <p>대표메일 : <a href="mailto:good@thinkcontetst.com" class="color-red">good@thinkcontetst.com</a></p>
+                                <p>주소 : 서울특별시 금천구 벚꽃로 298 대륭포스트타워 6차 607호</p>
+                                <p>대표이사 : 신선경</p>
+                                <p>사업자등록번호 : 214-86-44014</p>
+                                <p>개인정보보호책임자 : 전은혜</p>
+                                <p class="copyright color-fontgray">ⓒTHINKGOOD. ALL RIGHTS RESERVED.</p>
+                            </div>
+                            <div class="app-store">
+                                <div class="img-wrap d-flex align-items-center">
+                                    <a href="javascript:void(0)">
+                                        <img src="../../resource/image/common/img__appstore.png" alt="">
+                                    </a>
+                                    &nbsp;&nbsp;
+                                    <a href="javascript:void(0)">
+                                        <img src="../../resource/image/common/img__googleplay.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+
+</body>
+
+</html>
